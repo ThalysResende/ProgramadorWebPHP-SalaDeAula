@@ -9,37 +9,35 @@
 </head>
 <body>
 <div>
-<p>1) Escreva um programa que leia 
-o preço de um produto.
+    <p>Estrutura condicional
 
-O programa deverá calcular um desconto 
-de 10% na compra a vista.
-
-O programa deverá calcular um acrescimo 
-de 15% na compra parcelada.
-
-O programa deverá calcular o valor
-da parcela em até 10 vezes.
-
-O programa deverá imprimir todos
-os valores calculados.
-
-O programa deverá calcular o valor a ser pago.
+    Representa um fluxo alternativo 
+    na execução do programa.
+    
+    Desvio condicional simples (DCS)
+    É quando uma pergunta tem
+    somente uma unica resposta.
+    
+    Escreva um programa que leia o preço de um
+    produto.
+    
+    O programa deverá calcular um desconto de 
+    10% somente se o preco do produto for maior
+    de 100. 
     </p>
     <hr/>
     <h2 style="text-align: center">Informações dos Produtos</h2>
     <fieldset>
         <legend>Dados do Produto</legend>
-        <form action="prog1r.php" method="get">
+        <form action="prog2r.php" method="get">
             Valor:<br/>
-            <input type="text" name="valor" placeholder="Digite o Valor do Produto" />
+            <input type="text" name="valor" placeholder="Digite o Valor do Produto" required/>
             <br/>
             Quantidade:<br/>
-            <input type="number" name="qtd" min="1" placeholder="Digite a Quantidade" />
+            <input type="number" name="qtd" min="1" placeholder="Digite a Quantidade" required/>
             <br/>
             <input type="submit" value="Enviar"/>
         </form>
-    <br>
     </fieldset>
 </div>
 </body>
