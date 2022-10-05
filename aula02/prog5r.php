@@ -33,26 +33,24 @@ total a ser pago com os possíveis descontos.
         $qtd = $_GET["qtd"];
 
         $total = $valor * $qtd;
-        $desconto1 = 0;
-        $desconto2 = 0;
+        $desconto = 0;
+        $desconto_seven = 0;
         $valor_total_desconto = 0;
 
-        if($valor > 300){
-            $desconto1 = ($valor * 10) / 100;
+        if ($valor > 300) {
+            $desconto == ($valor * 10) / 100;
+        }
+        if ($valor > 5) {
+            $desconto_seven = ($valor * 7) / 100;
         }
 
-        if($qtd > 5){
-            $desconto2 = $valor * .07;
-        }
-
-        $valor_total_desconto = $total - $desconto1 -$desconto2;
-
+        $valor_total_desconto = $valor - $desconto - $desconto_seven;
     ?>
     <br>
     </fieldset>
     <br>
     <br>
-	<a href="prog1.html">Voltar</a>
+	<a href="prog5.html">Voltar</a>
     
 </div>
 </body>

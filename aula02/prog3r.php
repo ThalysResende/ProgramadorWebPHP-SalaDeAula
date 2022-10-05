@@ -9,37 +9,36 @@
 </head>
 <body>
 <div>
-<p>Desvio condicional composto (DCC)
+    <p>Desvio condicional composto (DCC)
 
-É quando uma pergunta tem duas ou mais possíveis respostas.
+    É quando uma pergunta tem duas ou mais possíveis respostas.
 
-Escreva um programa que leia um número.
-O programa deverá verificar se o número
-é par ou impar.
+    Escreva um programa que leia um número.
+    O programa deverá verificar se o número
+    é par ou impar.
 
-10 / 2 = 5; resto = 0;
+    10 / 2 = 5; resto = 0;
 
-% mod --> é um operador que retorna o resto de uma divisão.
+    % mod --> é um operador que retorna o resto de uma divisão.
 
-10 % 2 = 0;
+    10 % 2 = 0;
 
-9 % 2 = 1;
+    9 % 2 = 1;
     </p>
     <hr/>
-    <h2 style="text-align: center">Informações dos Produtos</h2>
+    <h2 style="text-align: center">Informações do número</h2>
     <fieldset>
-        <legend>Dados do Produto</legend>
+        <legend>Número Digitado</legend>
     <?php
         $numero = $_GET["n"];
-        $resto = $numero % 2; //% = modulo é o resto da divisão
+        $resto = $numero % 2; //% = Módulo é o resto da divisão
 
         //Desvio condicional composto
-        if($resto == 0){
-           echo "<h1  style='text-align: center'>Par!</h1>";
+        if($resto == 0) {
+            echo "<h1 style='text-align: center'>Par!</h1>";
         } else {
             echo "<h1 style='text-align: center'>Impar!</h1>";
         }
-
     ?>
     <br>
     </fieldset>

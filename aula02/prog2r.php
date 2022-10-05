@@ -34,15 +34,13 @@ de 100.
         $qtd = $_GET["qtd"];
 
         $desconto = 0;
-
         //Desvio condicional
         if($valor > 100){
-           $desconto = ($valor * 10) / 100; // $valor * .10; 
+            $desconto = ($valor * 10) / 100; //$Valor *.10;
         }
 
-        echo "Desconto: R$ " . number_format($desconto, 2, ",", ".");
-        echo "<br>Valor com Desconto: R$ ". number_format($valor - $desconto, 2, ",", ".");
-
+        echo "Desconto: R$ ".number_format($desconto, 2, ",", ".");
+        echo "<br>Valor com Desconto: R$ ".number_format($valor - $desconto, 2, ",", ".");
     ?>
     <br>
     </fieldset>

@@ -32,13 +32,14 @@ O programa deverá calcular o valor a ser pago.
         <legend>Dados do Produto</legend>
         <form action="prog1r.php" method="get">
             Valor:<br/>
-            <input type="text" name="valor" placeholder="Digite o Valor do Produto"/>
+            <input type="text" name="valor" placeholder="Digite o Valor do Produto" />
             <br/>
             Quantidade:<br/>
-            <input type="number" name="qtd" min="1" placeholder="Digite a Quantidade"/>
+            <input type="number" name="qtd" min="1" placeholder="Digite a Quantidade" />
             <br/>
             <input type="submit" value="Enviar"/>
         </form>
+    <br>
     </fieldset>
 </div>
 </body>

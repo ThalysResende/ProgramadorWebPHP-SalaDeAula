@@ -9,26 +9,23 @@
 </head>
 <body>
 <div>
-<p>Escreva um programa  que leia um número.
-O programa deverá verificar se o
-mesmo é positivo, negativo ou neutro.
+    <p>Escreva um programa que leia um número. O programa deverá verificar
+        se o mesmo é positivo, negativo ou neutro.
     </p>
     <hr/>
-    <h2 style="text-align: center">Informações dos Produtos</h2>
+    <h2 style="text-align: center">Verificando números</h2>
     <fieldset>
         <legend>Número Verificado</legend>
     <?php
-        $numero = $_GET["n"];
-        
-        //Desvio condicional composto
-        if($numero > 0){
-           echo "<h1  style='text-align: center'>Positivo!</h1>";
-        } else if($numero < 0){
-                echo "<h1 style='text-align: center'>Negativo!</h1>";
-            } else {
-                echo "<h1 style='text-align: center'>Neutro!</h1>";
-            }
+        $numero = $_GET["n"]; 
 
+        if($numero > 0) {
+            echo "<h1 style='text-align: center'>Positivo!</h1>";
+        } else if($numero < 0){    
+            echo "<h1 style='text-align: center'>Negativo!</h1>";
+        }else {
+            echo "<h1 style='text-align: center'>Neutro!</h1>";
+        }   
     ?>
     <br>
     </fieldset>
