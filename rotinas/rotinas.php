@@ -32,6 +32,14 @@
         echo "<br>";
         hoje();
         pule_linha(0);
+        echo "<br>";
+        soma(6, 6);
+        echo "<br>";
+        subtração(6, 6);
+        echo "<br>";
+        múltiplicação(6, 6);
+        echo "<br>";
+        divisão(6, 0);
         // var_dump(pule_linha(5));
 
         ?>

@@ -27,3 +27,31 @@ function pule_linha($numero_linha) {
         $numero_linha--;      
         } while($numero_linha >= 1);
 }
+
+function soma($a, $b) {   
+    $resultado = $a + $b; 
+    echo "Resultado da soma é: $resultado";
+    pule_linha(0);
+}
+
+function subtração($a, $b) {   
+    $resultado = $a - $b; 
+    echo "Resultado da subtração é: $resultado";
+    pule_linha(0);
+}
+
+function múltiplicação($a, $b) {   
+    $resultado = $a * $b; 
+    echo "Resultado da múltiplicação é: $resultado";
+    pule_linha(0);
+}
+
+function divisão($a, $b) {   
+    $resultado = $a / $b; 
+    echo "Resultado da divisão é: $resultado";
+    pule_linha(0);
+    if ($b == 0) {
+        echo "Erro";
+    }
+}
+
