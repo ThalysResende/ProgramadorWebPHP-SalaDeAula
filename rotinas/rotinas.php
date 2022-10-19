@@ -28,6 +28,7 @@
         include "funcoes.php";
 
         escreva_texto();
+        echo "<br>";
         escreva_texto2("Thalys");
         echo "<br>";
         hoje();
@@ -39,7 +40,9 @@
         echo "<br>";
         múltiplicação(6, 6);
         echo "<br>";
-        divisão(6, 0);
+        divisão(10, 10);
+        echo "<br>";
+        generating_rand(array(), 10);
         // var_dump(pule_linha(5));
 
         ?>
