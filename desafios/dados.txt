@@ -1,0 +1,98 @@
+Dados do Aluno - Cadastro realizado em: 24/102022as21:09:32
+Nome: 2323
+CPF: 222.222.222-22
+E-mail: 2ddwdwd@dwsdw
+Telefone: 323232
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:12:59
+Nome: 2323
+CPF: 222.222.222-22
+E-mail: 2ddwdwd@dwsdw
+Telefone: 323232
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:13:23
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:13:55
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:14:11
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:14:33
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:14:35
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:14:41
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:16:02
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:17:11
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:17:12
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:17:31
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:17:52
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
+Dados do Aluno - Cadastro realizado em: 24/102022as21:18:08
+Nome: wewe
+CPF: 232.323.232-32
+E-mail: dwdwd@dewdd
+Telefone: 34344
+-----------------
+
