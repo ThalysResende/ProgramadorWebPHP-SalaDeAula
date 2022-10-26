@@ -16,36 +16,63 @@
 
             if(f.nome.value == "") {
                 flag = 1;
-                msg = "Preencha o campo Nome!";
-                // msg1 = "Preencha o campo Nome!";
+                msg1 = "Preencha o campo Nome!";
             }
             
             if(f.cpf.value == "") {
                 flag = 1;
-                msg = msg + "<br>Preencha o campo CPF!";
+                msg2 = "Preencha o campo CPF!";
             }
             
             if(f.email.value == "") {
                 flag = 1;
-                msg = msg + "<br>Preencha o campo E-mail!";
+                msg3 = "Preencha o campo E-mail!";
             }
             
             if(f.tel.value == "") {
                 flag = 1;
-                msg = msg + "<br>Preencha o campo Telefone!";
+                msg4 = "Preencha o campo Telefone!";
             }
+
+            // if (flag == 0) {
+            //     document.getElementById("resposta").style.display = 'none';
+            //     return true;
+            // } else {
+            //     document.getElementById("resposta").style.display = 'block';
+            //     document.getElementById("resposta").innerHTML = msg;
+            //     return false;
+            // }
 
             if (flag == 0) {
-                document.getElementById("resposta").style.display = 'none';
+                document.getElementById("n").style.display = 'none';
+                document.getElementById("c").style.display = 'none';
+                document.getElementById("e").style.display = 'none';
+                document.getElementById("t").style.display = 'none';
                 return true;
             } else {
-                document.getElementById("resposta").style.display = 'block';
-                document.getElementById("resposta").innerHTML = msg;
+                document.getElementById("n").style.display = 'block';
+                document.getElementById("c").style.display = 'block';
+                document.getElementById("e").style.display = 'block';
+                document.getElementById("t").style.display = 'block';
+                document.getElementById("n").innerHTML = msg1;
+                document.getElementById("c").innerHTML = msg2;
+                document.getElementById("e").innerHTML = msg3;
+                document.getElementById("t").innerHTML = msg4;
                 return false;
             }
+            
+            // if (flag == 0) {
+            //     document.getElementById("c").style.display = 'none';
+            //     return true;
+            // } else {
+            //     document.getElementById("c").style.display = 'block';
+            //     document.getElementById("c").innerHTML = msg2;
+            //     return false;
+            // }
+
         }
 
-        function mascara(i) {
+        function mascaraC(i) {
             // console.log(i);
             // console.log(i.value);
             var v = i.value;
@@ -58,15 +85,20 @@
             if (v.length == 3 || v.length == 7) {i.value += ".";}
             if (v.length == 11) i.value += "-";
         }
+        
+        function mascaraT(i) {
+            var v = i.value;
 
-        // if (flag == 0) {
-            //     document.getElementById("n").style.display = 'none';
-            //     return true;
-            // } else {
-            //     document.getElementById("n").style.display = 'block';
-            //     document.getElementById("n").innerHTML = msg1;
-            //     return false;
-            // }
+            if (isNaN(v[v.length -1])) {
+                i.value = v.substring(0, v.length -1);
+                return;
+            }
+            i.setAttribute("maxlength", 14);
+            if (v.length == 1) {i.value = "(" + v;}
+            if (v.length == 3) i.value += ") ";
+            if (v.length == 9) i.value += "-";
+        }
+
     </script>
     
 </head>
@@ -78,11 +110,10 @@
             Cadastro de Aluno.
         </h1>
         <hr>
-        <br>
 
-        <section id="resposta" class="alert alert-danger" role="alert" style="display: none;">
+        <!-- <section id="resposta" class="alert alert-danger" role="alert" style="display: none;">
         
-        </section>
+        </section> -->
 
         <form action="desafio_cpf_recebido.php" method="post" name="f" onsubmit="return validar()">
             
@@ -90,22 +121,22 @@
             <label class="form-label">Nome:</label>
             <input type="text" name="nome" class="form-control">
             
-            <span id="n" style="color: red; display: none;">Preencha o campo Nome!</span>
+            <span id="n" style="color: red; display: none; font-size: 13px; padding-top: 10px;"></span>
             <br>
             <label class="form-label">CPF:</label>
-            <input type="text" name="cpf" class="form-control" oninput="mascara(this)">
+            <input type="text" name="cpf" class="form-control" oninput="mascaraC(this)">
             
-            <span id="c" style="color: red; display: none;">Preencha o campo CPF!</span>
+            <span id="c" style="color: red; display: none; font-size: 13px; padding-top: 10px;"></span>
             <br>
             <label class="form-label">E-mail:</label>
-            <input type="email" name="email" class="form-control">
+            <input type="email" name="email" class="form-control" placeholder="@">
             
-            <span id="e" style="color: red; display: none;">Preencha o campo E-mail!</span>
+            <span id="e" style="color: red; display: none; font-size: 13px; padding-top: 10px;"></span>
             <br>
             <label class="form-label">Telefone:</label>
-            <input type="text" name="tel" class="form-control">
+            <input type="text" name="tel" class="form-control" placeholder="(00) 0000-0000" oninput="mascaraT(this)">
             
-            <span id="t" style="color: red; display: none;">Preencha o campo Telefone!</span>
+            <span id="t" style="color: red; display: none; font-size: 13px; padding-top: 10px;"></span>
             <br>
             <br>
             <input type="submit" value="Enviar" class"btn-control">

@@ -44,7 +44,7 @@
             fclose($arquivo); //Fecha o arquivo
             
         } else {
-            echo "<br><h2 style='text-align: center;'>$cpf <br>Inválido!</h2>";
+            echo "<br><h2 style='text-align: center;'>CPF: $cpf <br>Inválido!</h2>";
         }
         ?>
         <br>
